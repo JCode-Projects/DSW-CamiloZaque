@@ -1,0 +1,39 @@
+body {
+    font-family: "Century Gothic", Arial, Helvetica, sans-serif;
+    background-color: #e1e1e1;
+}
+
+main {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.contenido h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+    main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .svg {
+        flex-basis: 40%;
+    }
+    
+    .contenido {
+        flex-basis: 55%;
+    }
+    
+    .contenido h1 {
+        margin-bottom: 50px;
+    }
+}
