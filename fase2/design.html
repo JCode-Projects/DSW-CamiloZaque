@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fase 2 - Diseño y Construcción</title>
+</head>
+<body>
+    <header>
+        <h1>FlexBox y CSS Grid</h1>
+    </header> <!-- Encabezado -->
+    <nav>
+        <ul>
+            <li>Inicio</li>
+            <li>Temas
+                <ul>
+                    <li>Flex Box</li>
+                    <li>CSS Grid</li>
+                </ul>
+            </li>
+            <li>Recursos Digitales
+                <ul>
+                    <li>Recurso 1</li>
+                    <li>Recurso 2</li>
+                </ul>
+            </li>
+            <li>Aprendizaje
+                <ul>
+                    <li>Actividad 1</li>
+                    <li>Actividad 2</li>
+                </ul>
+            </li>
+            <li>Acerca de
+                <ul>
+                    <li>Autor</li>
+                </ul>
+            </li>
+        </ul>
+    </nav> <!-- Barra de navegación -->
+    <section>
+        <h2>Conoce FlexBox y CSS Grid para tus proyectos</h2>
+        <p>En esta página podrás observar como funcionan las tecnologías de FlexBox y CSS Grid para el posicionamiento de elementos.</p>
+        <img src="../img/flexbox-cssgrid.png" alt="CSS Grid y FlexBox" title="Imagen que representa CSS Grid y FlexBox.">
+        <p>Imagen 1. Modelo de caja.</p>
+    </section> <!-- Poposito del sitio -->
+    <article>
+        <!-- FLEXBOX -->
+        <img src="../img/Icono de sección.png" alt="Separador de sección." title="Icono de separación de sección.">
+
+        <h3>FlexBox</h3>
+        <p>Permite maquetar nuestras páginas web de una manera mucho más fácil de lo que se hacía con la forma tradicional, en la que utilizábamos propiedades como float o position, entre otras.</p>
+
+        <div class="swich">
+            <p>Flexbox</p>
+        </div>
+
+        <div class="imagen">
+            <p>Se construirá más adelante con CSS y más contenedores.</p>
+        </div>
+        <p>Imagen 2. Contenedor con Flex Box.</p>
+
+        <h4>Estructura</h4>
+        <p>La estructura de Flexbox se compone de contenedores padre e hijos.</p>
+        <p>El Contenedor-Flex es nuestro contenedor padre y el Elemento-Flex es nuestro elemento hijo.</p>
+
+        <img src="../img/Ejes y propiedades flex.jpg" alt="Disposición de FlexBox" title="Imagen que muestra la disposición de flexbox.">
+        <p>Imagen 3. Ejes del contenedor.</p>
+
+        <p>El Contendor-Flex contiene direcciones que definen el origen y el fin del flujo de Elementos-Flex:</p>
+        <ul>
+            <li>Inicio Principal</li>
+            <li>Fin Principal</li>
+            <li>Inicio Secundario</li>
+            <li>Fin Secundario</li>
+        </ul>
+        <p>Cada Elemento-Flex está definido por sus dimensiones, anchura(tamaño principal) y altura(tamaño secundario) que dependen del eje principal y el eje secundario. </p>
+
+        <h4>Propiedades</h4>
+        <p>Para usar Flex Box se debe utilizar la propiedad "display" con el valor de "flex o inline-flex; ya podremos acceder a las propiedades flex box.</p>
+        <p><span>flex-direction:</span> Esta propiedad permite alterar y determinar el eje que tomarán los elementos hijos.</p>
+        <p><span>flex-wrap:</span> Esta propiedad hace que los elementos se dispongan en diferentes ejes, por defecto todos los elementos hijos trataran de colocarse en un solo eje.</p>
+        <p><span>justify-content:</span> Esta propiedad ayuda a ordenar los elementos hijos a lo largo de los ejes horizontales, controla su posicionamiento.</p>
+        <p><span>align-items:</span> Esta propiedad ayuda a ordenar los elementos hijos a lo largo de los ejes verticales, controla su posicionamiento.</p>
+        <a href="#">Ver en mozilla developer</a>
+
+        <!-- CSS GRID -->
+        <h3>Css Grid</h3>
+        <p>El CSS grid se puede utilizar para lograr muchos diseños diferentes. También se destaca por permitir dividir una página en áreas o regiones principales</p>
+        <p>Por definir la relación en términos de tamaño, posición y capas entre partes de un control construido a partir de primitivas HTML.</p>
+
+        <div class="swich">
+            <p>Css Grid</p>
+        </div>
+
+        <div class="imagen">
+            <p>Se construirá más adelante con CSS y más contenedores.</p>
+        </div>
+        <p>Imagen 4. Contenedor con CSS Grid.</p>
+
+        <h4>Estructura</h4>
+        <p>La estructura de CSS Grid se compone de contenedores padre e hijos.</p>
+        <p>El Contenedor-grid es nuestro contenedor padre y el Elemento-grid es nuestro elemento hijo.</p>
+
+        <img src="../img/grid.jpg" alt="Modelo de CSS Grid" title="Imagen del modelo de posicionamiento de CSS Grid.">
+        <p>Imagen 5. Modelo Grid.</p>
+
+        <p>El Contendor-grid se divide en diferentes áreas dependiendo las columnas y filas que se especifiquen, desde este contenedor es posible modificar la apariencia de los elementos hijos y su disposición.</p>
+        <p>Cada Elemento-Grid estará posicionado en una celda, es posible modificar este posicionamiento usando de referencia el número de celda y columna a la que el elemento se debe extender.</p>
+
+        <h4>Propiedades</h4>
+        <p>Para usar CSS Grid se debe utilizar la propiedad "display" con el valor de "grid"; ya podremos acceder a las propiedades de css grid.</p>
+        <p>También se pueden usar algunas propiedades de Flex Box.</p>
+        <p><span>grid-template:</span> Esta propiedad permite determinar el numero de columnas, filas y áreas, es una abreviación de a las propiedades grid-template-columns, grid-template-rows y grid-template-areas</p>
+        <p><span>grid-row y grid-column:</span> Estas propiedades permiten ubicar dentro de las celdas cada contenedor.</p>
+        <p><span>gap:</span> Esta propiedad permite dar espacio entre los diferentes contenedores, es una abreviación a column-gap y row-gap.</p>
+
+        <a href="#">Ver en mozilla developer</a>
+
+        <!-- Referencias -->
+        <h3>Referencias Bibliográficas</h3>
+        <p>Cabrera, G. (2020, 5 febrero). Flexbox - ¿Qué es y para qué sirve? Somos PNT. https://somospnt.com/blog/148-flexbox-que-es-y-para-que-sirve</p>
+        <p>Aceves, D. (2020, 6 febrero). Qué es CSS Grid Layout. Desarrollo Web. https://desarrolloweb.com/articulos/que-es-css-grid-layout.html</p>
+        <p>CSS Grid Layout - CSS | MDN. (2020, 21 agosto). Mozilla Developer. https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout</p>
+    </article> <!-- Contenido -->
+
+    <footer>
+        <p>zaquecamilo@gmail.com</p>
+        <p>live:zaquecamilo</p>
+        <p>18 / Febrero / 2021</p>
+    </footer>
+
+    <h2>Mockup del sitio final</h2>
+    <img src="../img/Index.png" alt="Imagen del diseño final." title="Mockup con todos los estilos a trabajar." style="max-width: 100%;">
+</body>
+</html>
