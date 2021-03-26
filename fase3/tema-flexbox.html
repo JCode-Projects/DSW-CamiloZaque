@@ -11,23 +11,23 @@
 <body>
     <nav class="menu">
         <ul>
-            <li><a href="./">Inicio</a> <em class="fas fa-bars"></em></li>
-            <li>Temas <em class="fas fa-chevron-circle-down"></em>
+            <li><a href="./">Inicio</a> <em class="fas fa-bars none"></em></li>
+            <li>Temas <em class="fas fa-chevron-circle-down none"></em>
                 <ul>
-                    <li><em class="fas fa-long-arrow-alt-right"> </em> <a href="./tema-flexbox.html"><p>FlexBox</p></a></li>
-                    <li><em class="fas fa-long-arrow-alt-right"> </em> <p>CSS Grid</p></li>
+                    <li><em class="fas fa-long-arrow-alt-right none"> </em> <a href="./tema-flexbox.html"><p>FlexBox</p></a></li>
+                    <li><em class="fas fa-long-arrow-alt-right none"> </em>  <a href="./tema-grid.html"><p>CSS Grid</p></a></li>
                 </ul>
             </li>
-            <li>Recursos Digitales <em class="fas fa-chevron-circle-down"></em>
+            <li>Recursos Digitales <em class="fas fa-chevron-circle-down none"></em>
                 <ul>
-                    <li><em class="fas fa-long-arrow-alt-right"> </em> <p>Recursos de FlexBox</p></li>
-                    <li><em class="fas fa-long-arrow-alt-right"> </em> <p>Recursos de CSS Grid</p></li>
+                    <li><em class="fas fa-long-arrow-alt-right none"> </em> <p>Recursos de FlexBox</p></li>
+                    <li><em class="fas fa-long-arrow-alt-right none"> </em> <p>Recursos de CSS Grid</p></li>
                 </ul>
             </li>
-            <li>Aprendizaje <em class="fas fa-chevron-circle-down"></em>
+            <li>Aprendizaje <em class="fas fa-chevron-circle-down none"></em>
                 <ul>
-                    <li><em class="fas fa-long-arrow-alt-right"> </em> <p>Item 1</p></li>
-                    <li><em class="fas fa-long-arrow-alt-right"> </em> <p>Item 2</p></li>
+                    <li><em class="fas fa-long-arrow-alt-right none"> </em> <p>Item 1</p></li>
+                    <li><em class="fas fa-long-arrow-alt-right none"> </em> <p>Item 2</p></li>
                 </ul>
             </li>
             <li>Autor</li>
@@ -36,9 +36,72 @@
 
     <main>
         <h1>FLEXBOX</h1>
-        
+        <div class="contenedor-flex">
+            <div class="switch">
+                <p id="info-flex">Con FlexBox</p>
+                <div class="botones-toggle">
+                    <em class="fas fa-toggle-off toggle-off"></em>
+                    <em class="fas fa-toggle-on"></em>
+                </div>
+            </div>
+            <div class="contenedor-imagen">
+                <div class="contenedor-superior">
+                    <div class="contenedor-cajas-uno">
+                        <div class="caja-flex"></div>
+                        <div class="caja-flex"></div>
+                        <div class="caja-flex"></div>
+                    </div>
+                </div>
+                <div class="contenedor-inferior">
+                    <div class="contenedor-cajas-dos">
+                        <div class="caja-flex"></div>
+                        <div class="caja-flex"></div>
+                    </div>
+                    <div class="contenedor-info">
+                        <em class="fas fa-arrow-left flecha-izquierda"></em>
+                        <em class="fas fas fa-arrow-up flecha-arriba"></em>
+                        <p>Contenedor <span id="info-flex">Con FlexBox</span></p>
+                    </div>
+                </div>
+            </div>
+            <p>Imagen 1. Visualización de FlexBox</p>
+        </div>
     </main>
     
+    <section class="estrucura">
+        <h2>Estructura</h2>
+        <p>La estructura de Flexbox se compone de contenedores padre e hijos. El Contenedor-Flex es nuestro contenedor padre y el Elemento-Flex es nuestro elemento hijo.</p>
+        <div class="imagen-ejes">
+            <img src="../img/Ejes_y_propiedades_flex.jpg" alt="Ejes y propiedades de FlexBox">
+            <p>Imagen 2. Ejes y propiedades de FlexBox</p>
+        </div>
+        <p>El Contendor-Flex contiene direcciones que definen el origen y el fin del flujo de Elementos-Flex:</p>
+        <ul>
+            <li>Inicio Principal</li>
+            <li>Fin Principal</li>
+            <li>Inicio Secundario</li>
+            <li>Fin Secundario</li>
+        </ul>
+        <p>Cada Elemento-Flex está definido por sus dimensiones, anchura(tamaño principal) y altura(tamaño secundario) que dependen del eje principal y el eje secundario.</p>
+    </section>
+
+    <section class="propiedades">
+        <h2>Propiedades</h2>
+        <p>Para usar Flex Box se debe utilizar la propiedad "display" con el valor de "flex o inline-flex; ya podremos acceder a las propiedades flex box.</p>
+        <div class="code-prop">
+            <p><code>flex-direction:</code> Esta propiedad permite alterar y determinar el eje que tomarán los elementos hijos.</p>
+            <p><code>flex-wrap:</code> Esta propiedad hace que los elementos se dispongan en diferentes ejes, por defecto todos los elementos hijos trataran de colocarse en un solo eje.</p>
+            <p><code>justify-content:</code> Esta propiedad ayuda a ordenar los elementos hijos a lo largo de los ejes horizontales, controla su posicionamiento.</p>
+            <p><code>align-items:</code> Esta propiedad ayuda a ordenar los elementos hijos a lo largo de los ejes verticales, controla su posicionamiento.</p>
+        </div>
+        <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/" target="_blank" class="boton">Ver en mozilla developer</a>
+    </section>
+
+    <section class="referencias">
+        <h2>Referencias Bibliográficas</h2>
+        <blockquote>Cabrera, G. (2020, 5 febrero). Flexbox - ¿Qué es y para qué sirve? Somos PNT. https://somospnt.com/blog/148-flexbox-que-es-y-para-que-sirve</blockquote>
+    </section>
+
     <footer>
         <p>Desarrollado por camilo Zaque &copy;</p>
     </footer>
