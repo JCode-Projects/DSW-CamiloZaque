@@ -41,3 +41,72 @@ if(toggleFlexOn) {
         }
     });
 }
+
+// Codigo para el reproductor
+let reproduciendo = false;
+
+const play = document.querySelector(".reproducir");
+const pausa = document.querySelector(".pausa");
+const repetir = document.querySelector(".reboot");
+const recorrido = document.querySelector("#recorrido");
+const paginaFlex = document.querySelector(".recursos-flex");
+const paginaGrid = document.querySelector(".recursos-grid");
+
+if(play) {
+    let audio;
+    if(paginaFlex) {
+        audio = new Audio("../fase3/recursos/Flex.mp3");
+    } else if(paginaGrid) {
+        audio = new Audio("../fase3/recursos/Grid.mp3");
+    }
+
+    audio.onloadeddata = () => {
+        recorrido.max = audio.duration;
+        recorrido.value = 0;
+    }
+
+    let reproducir = () => {
+        audio.play();
+        reproduciendo = true;
+        setInterval(() => {
+            recorrido.value = audio.currentTime;
+            if(audio.currentTime == audio.duration) {
+                audio.currentTime = 0;
+                pausa.classList.add("ocultar");
+                play.classList.remove("ocultar");
+            }
+        }, 2000);
+
+    }
+
+    let pausar = () => {
+        audio.pause();
+        reproduciendo = false;
+    }
+
+    play.addEventListener("click", () => {
+        reproducir();
+        play.classList.add("ocultar");
+        pausa.classList.remove("ocultar");
+    });
+
+    pausa.addEventListener("click", () => {
+        pausar();
+        pausa.classList.add("ocultar");
+        play.classList.remove("ocultar");
+    });
+
+    recorrido.addEventListener("click", () => {
+        audio.currentTime = recorrido.value;
+        reproducir();
+        play.classList.add("ocultar");
+        pausa.classList.remove("ocultar");
+    });
+
+    repetir.addEventListener("click", () => {
+        audio.currentTime = 0;
+        pausar();
+        pausa.classList.add("ocultar");
+        play.classList.remove("ocultar");
+    });
+}
