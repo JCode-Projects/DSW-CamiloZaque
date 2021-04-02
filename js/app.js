@@ -110,3 +110,15 @@ if(play) {
         play.classList.remove("ocultar");
     });
 }
+
+// Animación de autor
+let nodos = document.querySelectorAll(".oculto");
+if(nodos) {
+    setTimeout(() => {
+        nodos.forEach(nodo => {
+            setTimeout(() => {
+                nodo.classList.remove("oculto");
+            }, 100);
+        });
+    }, 1000);
+}
