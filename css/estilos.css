@@ -93,7 +93,7 @@ code {
     background-image: url(../img/hero.png);
     background-position: center center;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 95vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -333,7 +333,7 @@ code {
 
 .contenido-aside aside iframe {
     border-radius: 10px;
-    box-shadow: 1px 1px 10px #ffffff50;
+    box-shadow: 1px 1px 5px #ffffff50;
 }
 
 @media (min-width: 768px) {
