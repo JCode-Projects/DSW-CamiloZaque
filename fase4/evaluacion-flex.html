@@ -35,7 +35,7 @@
         </ul>
     </nav>
 
-    <main class="container mt-3 mb-2">
+    <main class="container mt-3 mb-2" id="contenedor-form">
         <h2>FlexBox <small class="text-muted">evaluación</small></h2>
 
         <div class="alert alert-light text-center" role="alert">
@@ -147,6 +147,44 @@
             <input type="submit" class="btn btn-primary" value="Enviar">
         </form>
 
+    </main>
+
+    <main class="container mt-3 mb-2 d-none" id="resultados">
+        <h2>Resultados <small class="text-muted">flexbox</small></h2>
+        <div class="alert alert-light border">
+            <div class="alert mt-3">
+                <p class="mb-0">1. ¿Qué propiedad se debe aplicar al contenedor para que tome las propiedades de FlexBox?</p>
+                <p class="mb-0 mt-2">Su respuesta: <span class="" id="pp-resp"></span></p>
+            </div>
+            <div class="alert mt-3">
+                <p class="mb-0">2. Que sucede al aplicar la propiedad <code>flex-wrap: wrap</code></p>
+                <p class="mb-0 mt-2">Su respuesta: <span class="" id="sp-resp"></span></p>
+            </div>
+            <div class="alert mt-3">
+                <p class="mb-0">3. ¿La propiedad <code>align-items</code> en qué eje posiciona los elementos por defecto?</p>
+                <p class="mb-0 mt-2">Su respuesta: <span class="" id="tp-resp"></span></p>
+            </div>
+            <div class="alert mt-3">
+                <p class="mb-0">4. ¿Con qué propiedad se debe determinar el ancho de un elemento flex?</p>
+                <p class="mb-0 mt-2">Su respuesta: <span class="" id="cp-resp"></span></p>
+            </div>
+            <div class="alert mt-3">
+                <p class="mb-0">5. ¿Qué hace la propiedad <code>flex-direction</code>?</p>
+                <p class="mb-0 mt-2">Su respuesta: <span class="" id="qp-resp"></span></p>
+            </div>
+        </div>
+        <div class="alert alert-primary">
+            <div class="card" style="width: 100%;">
+                <div class="card-body">
+                  <h5 class="card-title"><em class="far fa-newspaper"></em> Resultado   de evaluación.</h5>
+                  <p class="card-text"><em class="fas fa-project-diagram"></em> Puntaje: <span id="num-correctas"></span></p>
+                  <div class="progress mb-4">
+                    <div id="barra-progreso" class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <a href="./evaluacion-flex.html" class="btn btn-primary">Repetir cuestionario</a>
+                </div>
+              </div>
+        </div>
     </main>
 
     <footer>
