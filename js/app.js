@@ -122,8 +122,3 @@ if(nodos) {
         });
     }, 1000);
 }
-
-// Aviso
-document.querySelector("#desarrollo").addEventListener("click", () => {
-    alert("Sección en desarrollo, finalizado en la fase 4.");
-});

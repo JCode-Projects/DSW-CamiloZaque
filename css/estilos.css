@@ -31,7 +31,7 @@ h2 {
 }
 
 code {
-    background: #000;
+    background: rgb(34, 31, 31);
     padding: 5px 10px;
     color: #fff;
     border-radius: 5px;
@@ -248,7 +248,7 @@ code {
 
     .menu ul {
         display: grid;
-        grid-template-columns: 80px 130px 280px 130px 100px;
+        grid-template-columns: 80px 130px 280px 162px 100px;
         justify-content: space-between;
         max-width: 95%;
         margin: 0 auto;
@@ -833,3 +833,23 @@ footer p {
         text-align: center;
     }
 }
+
+/* ==> Estilos Fase 4 */
+
+.not-succes {
+	position: fixed;
+	top: 40px;
+	right: -100%;
+	margin-left: 90px;
+	background-color: #d12f2f;
+	font-weight: bold;
+	color: #fff;
+	padding: 20px 40px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 5px #3b3a3a56;
+    transition: all 1s;
+}
+
+.anim {
+	right: 30px;
+} 
