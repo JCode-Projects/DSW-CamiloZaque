@@ -137,7 +137,7 @@ function mostrarResultados(respUsuario, respValidas, objValidar) {
     let numCorrectas = 0;
 
     formulario.classList.add("d-none");
-    formulario.classList.remove("d-none");
+    resultados.classList.remove("d-none");
 
     primerPreg.innerHTML = `<code>${respuestaText.pp[respUsuario.preg1]}</code>`;
     segundaPreg.innerHTML = respuestaText.sp[respUsuario.preg2];
