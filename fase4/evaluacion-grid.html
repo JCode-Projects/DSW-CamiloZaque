@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Evaluación CSS Grid</title>
+    <script src="https://kit.fontawesome.com/4a44549445.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="./">Inicio</a> <em class="fas fa-bars none"></em></li>
+            <li>Temas <em class="fas fa-chevron-circle-down none"></em>
+                <ul>
+                    <li><em class="fas fa-long-arrow-alt-right none"> </em> <a href="./tema-flexbox.html"><p>FlexBox</p></a></li>
+                    <li><em class="fas fa-long-arrow-alt-right none"> </em>  <a href="./tema-grid.html"><p>CSS Grid</p></a></li>
+                </ul>
+            </li>
+            <li>Recursos Digitales <em class="fas fa-chevron-circle-down none"></em>
+                <ul>
+                    <li><em class="fas fa-long-arrow-alt-right none"> </em><a href="./recursos-flex.html"><p>Recursos de FlexBox</p></a></li>
+                    <li><em class="fas fa-long-arrow-alt-right none"> </em> <a href="./recursos-grid.html"><p>Recursos de CSS Grid</p></a></li>
+                </ul>
+            </li>
+            <li>Aprendizaje <em class="fas fa-chevron-circle-down none"></em>
+                <ul>
+                    <li><em class="fas fa-long-arrow-alt-right none"> </em> <a href="./evaluacion-flex.html"><p>Ev. FlexBox</p></a></li>
+                    <li><em class="fas fa-long-arrow-alt-right none"> </em> <a href="./evaluacion-grid.html"><p>Ev. CSS Grid</p></a></li>
+                </ul>
+            </li>
+            <li><a href="autor.html">Autor</a></li>
+        </ul>
+    </nav>
+
+    <main class="container mt-3 mb-2" id="contenedor-form">
+        <h2>CSS Grid <small class="text-muted">evaluación</small></h2>
+
+        <div class="alert alert-light text-center" role="alert">
+            <p class="mb-0">A continuación se evaluarán los conocimientos adquiridos a través de las diferentes secciones de esta página web.</p>
+        </div>
+
+        <form action="#" class="mb-5" id="form-flex">
+            <div class="alert alert-secondary" id="preg1" role="alert">
+                <p class="mb-0">1. ¿Qué propiedad se debe aplicar al contenedor para que tome las propiedades de CSS Grid?</p>
+                <div class="form-check mt-3">
+                    <input type="radio" class="form-check-input" name="pp" value="ans1" id="pp-ans1">
+                    <label for="pp-ans1"><code>display: grid;</code></label>
+                </div>
+                <div class="form-check mt-2">
+                    <input type="radio" class="form-check-input" name="pp" value="ans4" id="pp-ans4">
+                    <label for="pp-ans4"><code>position: cssgrid;</code></label>
+                </div>
+                <div class="form-check mt-2">
+                    <input type="radio" class="form-check-input" name="pp" value="ans2" id="pp-ans2">
+                    <label for="pp-ans2"><code>position: grid;</code></label>
+                </div>
+                <div class="form-check mt-2">
+                    <input type="radio" class="form-check-input" name="pp" value="ans3" id="pp-ans3">
+                    <label for="pp-ans3"><code>display: cssgrid;</code></label>
+                </div>
+                <div class="alert alert-danger mt-3 d-none">Seleccione una respuesta.</div>
+            </div>
+
+            <div class="alert alert-secondary" id="preg2" role="alert">
+                <p class="mb-0">2. Si se requiere que el contenido de la pagina se divida en tres columnas iguales ¿Qué propiedad y valor nos darán ese resultado?</p>
+                <div class="form-check mt-3">
+                    <input type="radio" class="form-check-input" name="sp" value="ans1" id="sp-ans1">
+                    <label for="sp-ans1"><code>grid-template-rows: 1fr 1fr 1fr;</code></label>
+                </div>
+                <div class="form-check mt-2">
+                    <input type="radio" class="form-check-input" name="sp" value="ans2" id="sp-ans2">
+                    <label for="sp-ans2"><code>grid-template-columns: repeat(3, 1fr);</code></label>
+                </div>
+                <div class="form-check mt-2">
+                    <input type="radio" class="form-check-input" name="sp" value="ans3" id="sp-ans3">
+                    <label for="sp-ans3"><code>grid-template-columns: 3fr;</code></label>
+                </div>
+                <div class="form-check mt-2">
+                    <input type="radio" class="form-check-input" name="sp" value="ans4" id="sp-ans4">
+                    <label for="sp-ans4"><code>grid-template-rows: repeat(3, 1fr);</code></label>
+                </div>
+                <div class="alert alert-danger mt-3 d-none">Seleccione una respuesta.</div>
+            </div>
+
+            <div class="alert alert-secondary" id="preg3" role="alert">
+                <p class="mb-0">3. Si se requiere un espacio entre las columnas y las filas ¿Qué propiedad de CSS Grid cumple esa tarea?</p>
+                <div class="form-check mt-3">
+                    <input type="radio" class="form-check-input" name="tp" value="ans1" id="tp-ans1">
+                    <label for="tp-ans1"><code>column-gap</code></label>
+                </div>
+                <div class="form-check mt-2">
+                    <input type="radio" class="form-check-input" name="tp" value="ans2" id="tp-ans2">
+                    <label for="tp-ans2"><code>row-gap</code></label>
+                </div>
+                <div class="form-check mt-2">
+                    <input type="radio" class="form-check-input" name="tp" value="ans3" id="tp-ans3">
+                    <label for="tp-ans3"><code>gap</code></label>
+                </div>
+                <div class="alert alert-danger mt-3 d-none">Seleccione una respuesta.</div>
+            </div>
+
+            <div class="alert alert-secondary" id="preg4" role="alert">
+                <p class="mb-0">4. ¿Cuál ejemplo fué usado para la demostración de CSS Grid?</p>
+                <div class="form-check mt-3">
+                    <input type="radio" class="form-check-input" name="cp" value="ans1" id="cp-ans1">
+                    <label for="cp-ans1">Una barra de navegación.</label>
+                </div>
+                <div class="form-check mt-2">
+                    <input type="radio" class="form-check-input" name="cp" value="ans2" id="cp-ans2">
+                    <label for="cp-ans2">Un listado de productos en tarjetas.</label>
+                </div>
+                <div class="form-check mt-2">
+                    <input type="radio" class="form-check-input" name="cp" value="ans3" id="cp-ans3">
+                    <label for="cp-ans3">Desarrollo de un Layout.</label>
+                </div>
+                <div class="form-check mt-2">
+                    <input type="radio" class="form-check-input" name="cp" value="ans4" id="cp-ans4">
+                    <label for="cp-ans4">Una tarjeta de presentación.</label>
+                </div>
+                <div class="alert alert-danger mt-3 d-none">Seleccione una respuesta.</div>
+            </div>
+
+            <div class="alert alert-secondary" id="preg5" role="alert">
+                <p class="mb-0">5. ¿Google Chrome nos ofrece una consola para trabajar con estilos y ver su aplicación?</p>
+                <div class="form-check mt-3">
+                    <input type="radio" class="form-check-input" name="qp" value="ans1" id="qp-ans1">
+                    <label for="qp-ans1">Verdadero.</label>
+                </div>
+                <div class="form-check mt-2">
+                    <input type="radio" class="form-check-input" name="qp" value="ans2" id="qp-ans2">
+                    <label for="qp-ans2">Falso.</label>
+                </div>
+                <div class="alert alert-danger mt-3 d-none">Seleccione una respuesta.</div>
+            </div>
+
+            <input type="submit" class="btn btn-primary" value="Enviar">
+        </form>
+
+    </main>
+
+    <main class="container mt-3 mb-2 d-none" id="resultados">
+        <h2>Resultados <small class="text-muted">Grid</small></h2>
+        <div class="alert alert-light border">
+            <div class="alert mt-3">
+                <p class="mb-0">1. ¿Qué propiedad se debe aplicar al contenedor para que tome las propiedades de CSS Grid?</p>
+                <p class="mb-0 mt-2">Su respuesta: <span class="" id="pp-resp"></span></p>
+            </div>
+            <div class="alert mt-3">
+                <p class="mb-0">2. Si se requiere que el contenido de la pagina se divida en tres columnas iguales ¿Qué propiedad y valor nos darán ese resultado?</p>
+                <p class="mb-0 mt-2">Su respuesta: <span class="" id="sp-resp"></span></p>
+            </div>
+            <div class="alert mt-3">
+                <p class="mb-0">3. Si se requiere un espacio entre las columnas y las filas ¿Qué propiedad de CSS Grid cumple esa tarea?</p>
+                <p class="mb-0 mt-2">Su respuesta: <span class="" id="tp-resp"></span></p>
+            </div>
+            <div class="alert mt-3">
+                <p class="mb-0">4. ¿Cuál ejemplo fué usado para la demostración de CSS Grid?</p>
+                <p class="mb-0 mt-2">Su respuesta: <span class="" id="cp-resp"></span></p>
+            </div>
+            <div class="alert mt-3">
+                <p class="mb-0">5. ¿Google Chrome nos ofrece una consola para trabajar con estilos y ver su aplicación?</code>?</p>
+                <p class="mb-0 mt-2">Su respuesta: <span class="" id="qp-resp"></span></p>
+            </div>
+        </div>
+        <div class="alert alert-primary">
+            <div class="card" style="width: 100%;">
+                <div class="card-body">
+                    <h5 class="card-title"><em class="far fa-newspaper"></em> Resultado   de evaluación.</h5>
+                    <p class="card-text"><em class="fas fa-project-diagram"></em> Puntaje: <span id="num-correctas"></span></p>
+                    <div class="progress mb-4">
+                        <div id="barra-progreso" class="progress-bar" role="progressbar" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <a href="./evaluacion-grid.html" class="btn btn-primary">Repetir cuestionario</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desarrollado por camilo Zaque &copy;</p>
+    </footer>
+    <script src="../js/app.js"></script>
+    <script src="../js/evalucion-grid.js"></script>
+</body>
+</html>
