@@ -37,6 +37,10 @@ code {
     border-radius: 5px;
 }
 
+p {
+    margin-bottom: 0;
+}
+
 /* 
    ==> Estilos Fase 1
 */
