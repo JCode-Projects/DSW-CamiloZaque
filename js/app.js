@@ -7,9 +7,9 @@ const toggleFlexOn = document.querySelector(".switch .fa-toggle-on");
 const toggleFlexOff = document.querySelector(".switch .fa-toggle-off");
 const cajasFlexUno = document.querySelector(".contenedor-cajas-uno");
 const cajasFlexDos = document.querySelector(".contenedor-cajas-dos");
-const textoFlex = document.querySelectorAll("#info-flex");
+const textoFlex = document.querySelectorAll(".info-flex");
 const cajaGrid = document.querySelector(".contenedor-cajas-grid");
-const textoGrid = document.querySelectorAll("#info-grid");
+const textoGrid = document.querySelectorAll(".info-grid");
 if(toggleFlexOn) {
     toggleFlexOn.addEventListener("click", () => {
         toggleFlexOn.classList.add("toggle-off");
